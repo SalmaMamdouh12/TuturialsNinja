@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value=""/>
+
+    <test name="Logged User could search for any product">
+        <classes>
+            <class name="testcases.TC06_EndToEndScenarios">
+                <methods>
+                    <include name="searchForSpecificProduct_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Logged User could switch between currencies">
+        <classes>
+            <class name="testcases.TC06_EndToEndScenarios">
+                <methods>
+                    <include name="selectRandomCurrency_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Logged user could select different Categories">
+        <classes>
+            <class name="testcases.TC06_EndToEndScenarios">
+                <methods>
+                    <include name="selectRandomCategory_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Logged user could select different Sub Categories">
+        <classes>
+            <class name="testcases.TC06_EndToEndScenarios">
+                <methods>
+                    <include name="selectRandomSubCategory_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
