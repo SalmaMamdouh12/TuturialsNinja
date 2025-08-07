@@ -1,7 +1,6 @@
 # TutorialsNinja
 
 ![TutorialsNinja Logo](logo.jpg)
-TutorialsNinja
 TutorialsNinja is an E-commerce platform showcasing features like product browsing, shopping cart, and checkout processes for electronic devices such as mobiles, laptops, and more.
 
 ## Table of Contents
