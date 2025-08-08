@@ -30,7 +30,7 @@ To set up the TutorialsNinja application locally, follow these steps:
 * git clone https://github.com/SalmaMamdouh12/TuturialsNinja.git
 
 2. Navigate to the project directory:
-*   cd XYZ-Bank
+*   cd TutorialsNinja
 
 3. Install dependencies:
 *   npm install
@@ -40,8 +40,10 @@ To set up the TutorialsNinja application locally, follow these steps:
 
 5. Run the application:
 *   npm start
+
 ## Usage
 * User Guide: Refer to the User Guide for detailed information on how to use the TutorialsNinja application.
+## ![Usage Example](run.gif)
 
 ## Contributing
 * We welcome contributions from the community. To contribute to TutorialsNinja, follow these steps:

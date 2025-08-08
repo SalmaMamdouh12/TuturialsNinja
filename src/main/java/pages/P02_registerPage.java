@@ -54,11 +54,20 @@ public class P02_registerPage {
         this.continueButton.click();
     }
 
-    //check if regisetered successfully
+    //check if registered successfully
     public boolean isRegisteredSuccessfully(String successfulMessage){
         return this.successfullyRegisteredMessage.getText().equals(successfulMessage);
 
     }
+
+
+
+
+
+
+
+
+
 
 //    public void fillFirstName(String firstname){
 //        this.firstname.sendKeys(firstname);

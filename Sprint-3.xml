@@ -3,35 +3,35 @@
 <suite name="All Test Suite">
     <parameter name="browser" value="edge"/>
 
-<!--    <test name="Add A Random Product To Cart">-->
-<!--        <classes>-->
-<!--            <class name="testcases.TC06_EndToEndScenarios">-->
-<!--                <methods>-->
-<!--                    <include name="addRandomProductToCart_P"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Add A Random Product To Cart">
+        <classes>
+            <class name="testcases.TC06_EndToEndScenarios">
+                <methods>
+                    <include name="addRandomProductToCart_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
-<!--    <test name="Add A random product To WishList">-->
-<!--        <classes>-->
-<!--            <class name="testcases.TC06_EndToEndScenarios">-->
-<!--                <methods>-->
-<!--                    <include name="addRandomProductToWishlist_P"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Add A random product To WishList">
+        <classes>
+            <class name="testcases.TC06_EndToEndScenarios">
+                <methods>
+                    <include name="addRandomProductToWishlist_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
-<!--    <test name="Add A random product To Compare">-->
-<!--        <classes>-->
-<!--            <class name="testcases.TC06_EndToEndScenarios">-->
-<!--                <methods>-->
-<!--                    <include name="addRandomProductToCompare_P"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Add A random product To Compare">
+        <classes>
+            <class name="testcases.TC06_EndToEndScenarios">
+                <methods>
+                    <include name="addRandomProductToCompare_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
     <test name="Create successful Order">
         <classes>

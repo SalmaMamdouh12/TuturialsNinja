@@ -18,8 +18,10 @@ public class TestBase {
     @BeforeTest
     public void setupDriver(String browser){
 
-        setDriver(getNewInstance(browser)); //empty to choose default driver (headful chrome)
+        setDriver(getNewInstance(browser));
+        getDriver().manage().window().maximize();
         getDriver().get("https://tutorialsninja.com/demo/");
+
     }
 
     @AfterTest

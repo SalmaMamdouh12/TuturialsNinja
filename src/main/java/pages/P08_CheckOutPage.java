@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
-import java.sql.Struct;
 import java.util.List;
 
 public class P08_CheckOutPage {
@@ -102,8 +100,6 @@ public class P08_CheckOutPage {
     }
 
     public void fillCheckOutFields( String firstname,String lastname, String company, String address1, String city, String postcode) throws InterruptedException {
-        this.newDataRadioButton.click();
-        Thread.sleep(3000);
         this.firstName.sendKeys(firstname);
         this.lastName.sendKeys(lastname);
         this.company.sendKeys(company);

@@ -1,44 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <parameter name="browser" value=""/>
-    <test name="Select Register Button From Home Page">
+    <parameter name="browser" value="edge"/>
+
+    <test name="Register with Random Valid Data">
         <classes>
-            <class name="testcases.TC01_Home">
+            <class name="testcases.TC02_Register">
                 <methods>
-                    <include name="CheckMyAccountworkingandopenregisterbutton_P"/>
+                    <include name="checkRegistrationWithValidData_P"/>
                 </methods>
             </class>
         </classes>
     </test>
 
-<!--    <test name="Register with Random Valid Data">-->
-<!--        <classes>-->
-<!--            <class name="testcases.TC02_Register">-->
-<!--                <methods>-->
-<!--                    <include name="checkRegistrationWithValidData_P"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Login with Valid Data">
+        <classes>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
-<!--    <test name="Login with Valid Data">-->
-<!--        <classes>-->
-<!--            <class name="testcases.TC04_Login">-->
-<!--                <methods>-->
-<!--                    <include name="loginWithValidData_P"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Validate Forgotten Password Button">
+        <classes>
+            <class name="testcases.TC05_ForgetPswd">
+                <methods>
+                    <include name="EmailSentWhenPasswordForgotten_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
-<!--    <test name="Validate Forgotten Password Button">-->
-<!--        <classes>-->
-<!--            <class name="testcases.TC05_ForgottenPassword">-->
-<!--                <methods>-->
-<!--                    <include name="EmailSentWhenPasswordForgotten_P"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+
 </suite>

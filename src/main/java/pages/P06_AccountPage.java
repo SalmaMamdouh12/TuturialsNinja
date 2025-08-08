@@ -13,6 +13,14 @@ public class P06_AccountPage {
 
     Actions actions;
     Random random = new Random();
+
+    String oldCurrency; //for currency assertion
+    String newCurrency;
+
+    int indexForCategory;
+    int indexForSubCategory;
+    //for assertion
+    String subCategoryToBeChosen;
     // Arrays for dynamic use
     WebElement[] topCategories;
     WebElement[] subCategories;
@@ -24,13 +32,6 @@ public class P06_AccountPage {
     WebElement selectedSubCategory;
     WebElement selectedSub;
 
-    String oldCurrency; //for currency assertion
-    String newCurrency;
-
-    int indexForCategory;
-    int indexForSubCategory;
-    //for assertion
-    String subCategoryToBeChosen;
 
     //constructor
     public P06_AccountPage(WebDriver driver) {

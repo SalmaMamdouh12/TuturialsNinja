@@ -1,12 +1,10 @@
 package testcases;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.P01_HomePage;
 import pages.P02_registerPage;
 import pages.P06_AccountPage;
 import util.Utility;
-
 import static drivers.DriverHolder.getDriver;
 import static util.Utility.*;
 
@@ -18,13 +16,10 @@ public class TC02_Register extends TestBase{
     P06_AccountPage logoutPage;
     String firstName = generateRandomName();
     String lastName = generateRandomName();
-    static String registeredEmail=generateRandomGmail();
     String registeredPhone="012" + generaterandomDigits(8);;
+    String registrationSuccessfulMsg = "Your Account Has Been Created!";
+    static String registeredEmail=generateRandomGmail();
     static String registeredPassword = generatecomplexPassword(15);
-
-
-    // Assertion var
-       String registrationSuccessfulMsg = "Your Account Has Been Created!";
 
     //define methods
     @Test(priority = 1 , description =  "Check Registration With Valid Data")
@@ -46,6 +41,17 @@ public class TC02_Register extends TestBase{
         //Hard Assertion
         Assert.assertTrue(registerPage.isRegisteredSuccessfully(registrationSuccessfulMsg), "Assertion Msg: Registration Failed");
     }
+
+
+
+
+
+
+
+
+
+
+
 
 /*
     @Test(priority = 2 , description =  "Check Registration With Invalid Data")
